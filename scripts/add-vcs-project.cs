@@ -48,7 +48,7 @@ if (contextsExists) {
    }
 }
 
-java.lang.System.out.println("DEBUG - pp -> " + p);
+java.lang.System.out.println("DEBUG - ppp -> " + p);
 //create and update the project 
 resp = jelastic.env.vcs.CreateProject({
    envName: p.envName, 
@@ -61,7 +61,7 @@ resp = jelastic.env.vcs.CreateProject({
    login: p.login, 
    password: p.password, 
    autoupdate: p.autoupdate, 
-   interval: parseInt(p.interval, 10), 
+   interval: String(p.interval), 
    autoResolveConflict: p.autoResolveConflict, 
    zdt: p.zdt
 });
