@@ -48,6 +48,7 @@ if (contextsExists) {
    }
 }
 
+java.lang.System.out.println("DEBUG - p -> " + p);
 //create and update the project 
 resp = jelastic.env.vcs.CreateProject({
    envName: p.envName, 
