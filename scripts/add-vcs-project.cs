@@ -61,7 +61,7 @@ resp = jelastic.env.vcs.CreateProject({
    login: p.login, 
    password: p.password, 
    autoupdate: p.autoupdate, 
-   interval: p.interval, 
+   interval: parseInt(p.interval, 10), 
    autoResolveConflict: p.autoResolveConflict, 
    zdt: p.zdt
 });
